@@ -21,6 +21,28 @@
 pip install razorpay
 ```
 
+### Setup
+<hr>
+
+#### Virtual Environment
+```python
+python3 -m virtualenv myvenv
+source myenv/bin/activate  
+pip install -r requirements.txt
+```
+
+#### Database Migrations
+```python
+Migrating Databases
+
+python Manage.py makemigrations
+python manage.py migrate
+```
+
+### Start Project
+```python
+python manage.py runserver
+```
 
 ### Implementation
 <hr>
@@ -37,8 +59,8 @@ Pass the following data as per requirement to test the API as a POST request
     "amount": 20000,
     "currency": "INR",
     "customer": {
-        "contact": "8866911353",
-        "email": "shahhetu.hs@gmail.com"
+        "contact": "1234567890",
+        "email": "myname@gmail.com"
     },
     "description": "buying abc",
     "notify": {
